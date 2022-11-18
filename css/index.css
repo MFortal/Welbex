@@ -1,2 +1,52 @@
 @import url("./normalize.css");
 @import url("./fonts.css");
+
+:root {
+  --color-light-text: #e4e5ea;
+  --color-black: #0e1014;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-light-text);
+}
+
+.container {
+  margin: 0 5%;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  min-height: 55px;
+
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  font-family: "Inter-Medium";
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+}
+
+/* Main */
+.main__header {
+  max-width: 272px;
+}
