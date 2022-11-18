@@ -4,11 +4,16 @@
 :root {
   --color-light-text: #e4e5ea;
   --color-black: #0e1014;
+  --color-yellow: #fcb045;
+  --color-pink: #ff3f78;
+  --color-red: #fd1d1d;
 }
 
 * {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
 li {
@@ -18,6 +23,10 @@ li {
 body {
   background-color: var(--color-black);
   color: var(--color-light-text);
+
+  font-family: "Inter-Regular";
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .container {
@@ -47,6 +56,121 @@ body {
 }
 
 /* Main */
+.main {
+  padding: 40px 0 59px;
+  max-width: 445px;
+
+  background-image: radial-gradient(
+      238.53% 189.02% at 3.2% 3.49%,
+      rgba(255, 246, 233, 0.1) 0%,
+      rgba(26, 29, 35, 0.1) 26.62%,
+      rgba(26, 29, 35, 0.1) 52.1%,
+      rgba(26, 29, 35, 0.01) 70.17%,
+      rgba(26, 29, 35, 0) 100%
+    ),
+    url("../assets/noise.png");
+
+  backdrop-filter: blur(7.5px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .main__header {
   max-width: 272px;
+
+  margin-bottom: 45px;
+}
+.main__header-title {
+  margin-bottom: 15px;
+}
+
+.main__header-title-text {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.main__header-title-text span {
+  font-family: "Inter-Black";
+  background: linear-gradient(
+      92deg,
+      var(--color-yellow) 27.14%,
+      var(--color-pink) 121.36%
+    ),
+    var(--color-light-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /*text-fill-color: transparent;*/
+}
+
+.main__header-text {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.offer__text {
+  font-size: 18px;
+  line-height: 22px;
+
+  margin-bottom: 20px;
+}
+
+.offer__text span {
+  font-family: "Inter-Bold";
+  font-size: 18px;
+  line-height: 22px;
+
+  background: linear-gradient(
+    90deg,
+    var(--color-yellow) 36.99%,
+    var(--color-red) 100%
+  );
+
+  background: linear-gradient(
+    90deg,
+    var(--color-yellow) 36.99%,
+    var(--color-red) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /*text-fill-color: transparent;*/
+}
+
+.offer__list {
+  /* сделать grid */
+  display: flex;
+  row-gap: 14px;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.offer__list_item {
+  font-family: "Montserrat-Regular";
+  font-size: 13px;
+  line-height: 16px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  position: relative;
+  margin-left: 15px;
+}
+
+.offer__list_item::before {
+  content: "";
+  height: 1px;
+  width: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--color-yellow) 36.99%,
+    var(--color-red) 100%
+  );
+
+  position: absolute;
+  left: -15px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
