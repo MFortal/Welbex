@@ -49,7 +49,7 @@ body {
   align-items: center;
 
   position: fixed;
-  z-index: 3;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -75,11 +75,20 @@ body {
 
 /* Main */
 .main {
+  position: relative;
   overflow: hidden;
 
   margin-top: 55px;
   padding: 40px 0 59px;
-  max-width: 445px;
+}
+
+.main__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 
   background-image: url("../assets/noise.png"),
     radial-gradient(
@@ -96,6 +105,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.main__header,
+.main__offer {
+  position: relative;
+  z-index: 6;
+}
+
 .main__header {
   margin-bottom: 46px;
 }
@@ -306,6 +322,13 @@ body {
 /* Шары */
 .ball {
   position: absolute;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.ball-purple,
+.ball-red {
+  z-index: 2;
 }
 
 .ball-purple-light {
@@ -314,15 +337,55 @@ body {
   left: 258px;
   top: 107px;
 
-  z-index: 1;
-  border-radius: 50%;
   background: #833ab4;
   opacity: 0.5;
-  /* filter: blur(196px); */
+  filter: blur(196px);
 }
 
-/*
-Текст выше кружков
-position: relative;
-    z-index: 6;
-*/
+.ball-red-light {
+  width: 211px;
+  height: 210px;
+  left: -55px;
+  top: 241px;
+
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.ball-red {
+  width: 43px;
+  height: 43px;
+  left: 29px;
+  top: 402px;
+
+  background: radial-gradient(
+      64% 64% at 27.25% 26.5%,
+      rgba(255, 208, 208, 0.536) 0%,
+      rgba(212, 93, 93, 0.264) 59.67%,
+      rgba(167, 49, 49, 0.248) 78.59%,
+      rgba(130, 25, 25, 0.248) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+.ball-purple {
+  width: 40px;
+  height: 40px;
+  left: 296px;
+  top: 236px;
+
+  background: radial-gradient(
+      64% 64% at 27.25% 26.5%,
+      rgba(236, 208, 255, 0.64) 0%,
+      rgba(161, 93, 207, 0.24) 59.67%,
+      rgba(118, 49, 164, 0.208) 78.59%,
+      rgba(86, 24, 128, 0.232) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
