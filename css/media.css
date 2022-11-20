@@ -74,7 +74,7 @@
 
   .logo__text {
     width: 165px;
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat-Light", serif;
     font-size: 10px;
     line-height: 12px;
   }
@@ -150,7 +150,7 @@
   }
 
   .list-item__header {
-    font-family: "Inter-Medium";
+    font-family: "Inter-Medium", serif;
     font-size: 18px;
     line-height: 22px;
     text-align: end;
@@ -169,11 +169,11 @@
   }
 
   .offer__text {
-    font-family: "Inter-Medium";
+    font-family: "Inter-Medium", serif;
   }
 
   .offer__text span {
-    font-family: "Inter-Bold";
+    font-family: "Inter-Bold", serif;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }

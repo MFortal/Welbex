@@ -26,7 +26,7 @@ body {
   background-color: var(--color-black);
   color: var(--color-light-text);
 
-  font-family: "Inter-Regular";
+  font-family: "Inter-Regular", serif;
   font-size: 14px;
   line-height: 17px;
 
@@ -62,7 +62,7 @@ body {
 }
 
 .menu__item {
-  font-family: "Inter-Medium";
+  font-family: "Inter-Medium", serif;
   font-size: 12px;
   line-height: 15px;
 
@@ -134,7 +134,7 @@ body {
 .main__header-title-text span {
   margin-left: 1px;
 
-  font-family: "Inter-Black";
+  font-family: "Inter-Black", serif;
   background: linear-gradient(
       92deg,
       var(--color-yellow) 27.14%,
@@ -144,13 +144,12 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /*text-fill-color: transparent;*/
 }
 
 .main__header-text {
   margin-left: -2px;
 
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", serif;
   font-size: 18px;
   line-height: 22px;
 }
@@ -184,7 +183,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /*text-fill-color: transparent;*/
 }
 
 .offer__list {
@@ -196,7 +194,7 @@ body {
 }
 
 .list-item__header {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", serif;
   font-size: 13px;
   line-height: 15px;
 
@@ -227,7 +225,7 @@ body {
 .list-item__info {
   display: none;
 
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", serif;
   font-size: 16px;
   line-height: 20px;
   text-align: right;
@@ -236,7 +234,7 @@ body {
 .offer__btn {
   display: none;
 
-  font-family: "Inter-Medium";
+  font-family: "Inter-Medium", serif;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -264,7 +262,7 @@ body {
 }
 
 .block__title {
-  font-family: "Inter-Bold";
+  font-family: "Inter-Bold", serif;
   font-size: 12px;
   line-height: 15px;
 
@@ -285,7 +283,7 @@ body {
 }
 
 .block__body-item {
-  font-family: "Inter-Regular";
+  font-family: "Inter-Regular", serif;
 }
 
 .block-menu .block__body {
@@ -305,7 +303,7 @@ body {
   margin-left: -1px;
   margin-bottom: 8px;
 
-  font-family: "Inter-Medium";
+  font-family: "Inter-Medium", serif;
   font-size: 16px;
   line-height: 19px;
 }
@@ -333,7 +331,7 @@ body {
 }
 
 .block__body-info {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", serif;
   font-size: 12px;
   line-height: 15px;
 
