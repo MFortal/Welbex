@@ -7,19 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2 task</title>
   <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/media.css" media="only screen and (min-width:1310px)">
 </head>
 
 <body>
+  <div class="balls-desktop">
+    <div class="ball ball-purple ball-desk-purple"></div>
+    <div class="ball ball-red ball-desk-red"></div>
+    <div class="ball ball-red ball-desk-red-sm"></div>
+    <div class="ball ball-purple-light ball-desk-purple-light"></div>
+    <div class="ball ball-red-light ball-desk-red-light"></div>
+  </div>
   <header class="header">
-    <div class="container">
+    <div class="container header-container">
+
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="logo" class="logo__img">
+        <span class="logo__text">крупный интегратор CRM в Росcии и ещё 8 странах</span>
+      </div>
+
       <nav class="navigation">
         <ul class="menu">
-          <li class="menu__item">услуги</li>
-          <li class="menu__item">виджеты</li>
-          <li class="menu__item">интеграции</li>
-          <li class="menu__item">кейсы</li>
+          <li class="menu__item">Услуги</li>
+          <li class="menu__item">Виджеты</li>
+          <li class="menu__item">Интеграции</li>
+          <li class="menu__item">Кейсы</li>
+          <li class="menu__item menu__item-descktop">Сертификаты</li>
         </ul>
       </nav>
+
+      <div class="contact">
+        <p class="contact-phone">+7 555 555-55-55</p>
+        <div class="contact-links header__links">
+          <a href="#!" class="links__link">
+            <img src="./assets/telegram.svg" alt="telegram" class="link__item">
+          </a>
+          <a href="#!" class="links__link">
+            <img src="./assets/viber.svg" alt="viber" class="link__item">
+          </a>
+          <a href="#!" class="links__link">
+            <img src="./assets/whatsapp.svg" alt="whatsapp" class="link__item">
+          </a>
+        </div>
+      </div>
     </div>
   </header>
   <section class="main">
@@ -31,7 +61,7 @@
     </div>
 
     <div class="main__background"></div>
-    <div class="container">
+    <div class="container main-container">
       <div class="main__header">
         <div class="main__header-title">
           <h3 class="main__header-title-text">Зарабатывайте больше
@@ -43,11 +73,25 @@
       <div class="main__offer">
         <p class="offer__text">Вместе с <span>бесплатной</span> <span>консультацией</span> мы дарим:</p>
         <div class="offer__list">
-          <p class="offer__list_item">Skype аудит</p>
-          <p class="offer__list_item">30 виджетов</p>
-          <p class="offer__list_item">Dashboard</p>
-          <p class="offer__list_item">Месяц аmoCRM</p>
+          <div class="offer__list-item">
+            <p class="list-item__header">Skype аудит</p>
+            <span class="list-item__info">отдела продаж и CRM системы</span>
+          </div>
+          <div class="offer__list-item item-grid-c1r1">
+            <p class="list-item__header" id="item-widget">30 виджетов</p>
+            <span class="list-item__info">30 готовых решений</span>
+          </div>
+          <div class="offer__list-item item-grid-c2r1">
+            <p class="list-item__header">Dashboard</p>
+            <span class="list-item__info">с показателями
+              вашего бизнеса</span>
+          </div>
+          <div class="offer__list-item">
+            <p class="list-item__header" id="item-month">Месяц аmoCRM</p>
+            <span class="list-item__info">использования CRM</span>
+          </div>
         </div>
+        <button class="offer__btn">Получить консультацию</button>
       </div>
     </div>
   </section>
@@ -66,9 +110,9 @@
           <h5 class="block__title">Меню</h5>
           <div class="block__body">
             <a class="block__body-item" href="#!">Расчёт стоимости</a>
-            <a class="block__body-item" href="#!">Благодарность клиентов</a>
+            <a class="block__body-item item-grid-c2r2" href="#!" id="item-gratitude">Благодарность клиентов</a>
             <a class="block__body-item" href="#!">Услуги</a>
-            <a class="block__body-item" href="#!">Кейсы</a>
+            <a class="block__body-item item-grid-c2r1" href="#!">Кейсы</a>
             <a class="block__body-item" href="#!">Виджеты</a>
             <a class="block__body-item" href="#!">Сертификаты</a>
             <a class="block__body-item" href="#!">Интеграции</a>
@@ -81,8 +125,8 @@
         <div class="block block-contact">
           <h5 class="block__title">контакты</h5>
           <div class="block__body">
-            <p class="block__body-phone">+7 555 555-55-55</p>
-            <div class="block__body-links">
+            <p class="contact-phone">+7 555 555-55-55</p>
+            <div class="contact-links">
               <a href="#!" class="links__link">
                 <img src="./assets/telegram.svg" alt="telegram" class="link__item">
               </a>
@@ -92,7 +136,6 @@
               <a href="#!" class="links__link">
                 <img src="./assets/whatsapp.svg" alt="whatsapp" class="link__item">
               </a>
-
             </div>
             <p class="block__body-address">
               Москва, Путевой проезд 3с1, к 902
@@ -106,6 +149,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
